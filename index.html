@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora por PHP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+            .control{
+                height: 50px;
+                width: 80px;
+                background-color:gray;
+                border: 3px solid;
+            }
+            .control2{
+                height: 80px;
+                width: 80px;
+                background-color:rgb(96, 226, 240);
+                border: 3px solid;
+            }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form method ="GET" action= "php/operacion.php">
+  
+            <legend>Bienvenido a mi primera calculadora en PHP</legend>
+            <br>
+            <div class="control">
+                <label> Numero 1:</label>
+                    <input type="text" name="operando1">
+                <br>
+                <label> Numero 2: </label>
+                <input type="text" name="operando2">
+                <br>
+             </div>
+                <br>
+            <div class="control2">
+                <select name="operador">
+                    <option value="+">+
+                    </option>
+                    <option value="-">-
+                    </option>
+                    <option value="*">*
+                    </option>
+                    <option value="/">/
+                    </option>
+                </select>
+
+            
+                <button type="submit" class="btn" value="enviar">
+                         Calcular
+                </button>
+                   
+</div>
+        </form>
+    </fieldset>
+
+
+</body>
+</html>
